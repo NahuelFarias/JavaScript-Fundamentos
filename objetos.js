@@ -71,7 +71,7 @@ var carola = {
     edad:     30
 }
 
-functioncumpleanos(persona){
+function cumpleanos(persona){
     persona.edad += 1
 }
 
@@ -79,7 +79,7 @@ functioncumpleanos(persona){
 // modificar en ese lo que se quiera modificar y retornarlo. Tambien se puede agregar atributos al objeto copiado
 // Para esto usamos ...Objeto, parametrosAModif:
 
-functioncumpleanosCopiaObj(persona){
+function cumpleanosCopiaObj(persona){
     return{
         ...persona,
         edad: persona.edad + 1,

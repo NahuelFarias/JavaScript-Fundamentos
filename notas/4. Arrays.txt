@@ -1,0 +1,18 @@
+--> Introducción a arrays
+
+Los arrays son estructuras que nos permiten organizar elementos dentro de una collección. Estos elementos pueden ser números,
+strings, booleanos, objetos, etc.
+
+
+--> Filtrar un array
+
+
+
+--> Transformar un array
+
+
+
+--> Reducir un array a un valor
+
+
+

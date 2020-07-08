@@ -1,0 +1,117 @@
+--> Condicionales
+
+Empezaremos con los condicionales. Los condicionales nos permiten decidir si un código se ejecuta o no. 
+También introducimos un nuevo tipo de datos primitivos: el booleano, que determina si un valor es falso o verdadero. 
+Mediante un condicional (if) decidiremos si se ejecuta una parte de nuestro código cuando se cumpla o no cierta condición.
+
+
+--> Funciones que retornan valores
+
+En esta clase seguiremos trabajando con condicionales para desglosar las funciones en funciones más pequeñas que retornen
+un valor.
+
+Debemos de tener en cuenta que el número 18 esta incluido dentro del rango de edad. Para ello utilizamos los símbolos >=.
+
+Return detiene la ejecución de una función y devuelve el valor de esa función.
+
+Las variables definidas con const se comportan como las variables, excepto que no pueden ser reasignadas. Las constantes pueden
+ser declaradas en mayúsculas o minúsculas. Pero por convención, para distinguirlas del resto de variables, se escribe todo en
+mayusculas.
+
+Para indinicar constantes se usa const. Es una buena practica nombrarla con mayusculas 😄
+
+Ya casi no se usa el var, es mejor usar let, por que esta ultima respeta el scope de las funciones 😄
+
+
+--> Arrow functions
+
+En esta clase aprenderemos a utilizar Arrow Functions que permiten una nomenclatura más corta para escribir expresiones de 
+funciones. Este tipo de funciones deben definirse antes de ser utilizadas.
+
+Al escribir las Arrow Functions no es necesario escribir la palabra function, la palabra return, ni las llaves.
+
+Arrow Functions
+
+JS permite asignar una función a una variable. Se llama función anónima. Y se puede escribir de varias maneras:
+
+const MAYORIA_DE_EDAD = 18
+
+var esMayorDeEdad =function(persona){   	
+	return persona.edad >= MAYORIA_DE_EDAD
+}
+
+Sacha prefiere declararla como ‘const’ y no como ‘var’ para definir que es una función y no una variable:
+
+    const esMayorDeEdad =function(persona){   	
+        return persona.edad >= MAYORIA_DE_EDAD
+    }
+
+La palabra clave ‘function’ puede reemplazarse por un ‘=>’ después de persona y se convierte en un arrow function:
+
+    const esMayorDeEdad = (persona) => {   	
+        return persona.edad >= MAYORIA_DE_EDAD
+    }
+
+Se pueden seguir quitando caracteres.
+
+    Cuando hay un sólo parámetro se pueden quitar los paréntesis.
+    
+    Si una función sólo retorna un valor se puede quitar el keyword ‘return’ y las llaves {}
+    
+        const esMayorDeEdad = persona => persona.edad >= MAYORIA_DE_EDAD
+
+    También se puede desestructurar el parámetro ya que sólo nos interesa la edad. Hay que agregar paréntesis:
+
+        const esMayorDeEdad = ({ edad }) => edad >= MAYORIA_DE_EDAD
+
+
+--> Estructuras repetitivas: for
+
+El bucle for, se utiliza para repetir una o más instrucciones un determinado número de veces.
+
+Para escribir un bucle for se coloca la palabra for seguida de paréntesis y llaves.
+Ej. for( ){ }. Dentro de los paréntesis irán las condiciones para ejecutar el bucle, y dentro las llaves irán las
+instrucciones que se deben repetir.
+
+En este ejemplo la variable i la utilizamos como contador.
+
+Ciclo for : Nos permite realizar cierta tarea de manera repetitiva, es decir que podremos realizar una tarea una cierta cantidad
+de veces.
+
+Consiste de 3 partes:
+
+    Inicial
+    Condición
+    Incremento
+
+Dentro de las llaves se encuentra el cuerpo del ciclo for , que contiene las instrucciones que se repetirán mientras se cumpla la
+condición.
+
+Para saber cuantas veces queremos que se ejecute una condición utilizamos un contador .
+
+Para incrementar / decrementar el contador utilizamos la parte final del for según lo requiramos.
+
+NOTA : Si introducimos un obj en una función, sus propiedades serán modificadas, ya que este es pasado por referencia. Si no
+deseamos que eso suceda es necesario crear un nuevo objeto, desglosando el objeto original.
+
+
+--> Estructuras repetitivas: while
+
+While se ejecuta únicamente mientras la condición que se está evaluando es verdadera.
+
+En ocasiones nuestro código puede fallar por errores de syntaxis o errores lógicos. En caso de que quieras verificar tu código,
+debes utilizar un debugger. El código se detiene cada vez que lee esta palabra.
+
+
+--> Estructuras repetitivas: do-while
+
+A diferencia de la instrucción while, un bucle do…while se ejecuta una vez antes de que se evalúe la expresión condicional.
+
+
+--> Condicional múltiple: switch
+
+Switch se utiliza para realizar diferentes acciones basadas en múltiples condiciones.
+
+Prompt, muestra un cuadro de mensaje que le pide al usuario que ingrese algúna información.
+
+Break, sirve para que el browser se salte un bucle.

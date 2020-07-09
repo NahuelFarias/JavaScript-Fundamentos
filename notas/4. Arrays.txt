@@ -3,16 +3,65 @@
 Los arrays son estructuras que nos permiten organizar elementos dentro de una collección. Estos elementos pueden ser números,
 strings, booleanos, objetos, etc.
 
+Para indicar que algo es un array utilizamos el símbolo "[ ]"
+var personas = []
+
+Dentro de los corchetes introducimos las variables que deseamos que contenga nuestro array, las variables pueden ser:
+- Números
+- Strings
+- Objetos
+- Funciones
+
+Incluso podemos mezclar diferentes tipos de datos.
+
+Si queremos acceder al 1er elemento de un array , escribimos el nombre del array seguido de los corchetes y el índice 0:
+
+  personas[0]
+
+Si queremos acceder a los atributos de alguno de los elementos después del índice del elemento se agrega un “.” seguido del atributo:
+
+  personas[0].altura
+
+Otra forma de acceder a los atributos es utilizando corchetes y el atributo pasarlo como un string:
+
+  personas[0].[‘altura’]
+
+Se debe tomar en cuenta que estamos utilizando objetos, no colecciones, pero podemos acceder a los atributos.
+
+NOTA: Los arrays como los strings tienen la propiedad length, indicándonos cuantos elementos contiene.
+
 
 --> Filtrar un array
 
+En esta clase aprenderemos como filtrar los arrays. Para filtrar siempre necesitamos establecer una condición. En este ejemplo nuestra condición
+ es que la estatura de las personas sea mayor de 1.80mts.
+
+El método filter ( ) crea una nueva matriz con todos los elementos que pasan la prueba implementada por la función proporcionada.
+
+Recuerda que si no hay elementos que pasen la prueba, filter devuelve un array vacío.
 
 
 --> Transformar un array
 
+En esta clase veremos cómo transformar un array. El método map() itera sobre los elementos de un array en el orden de inserción y devuelve
+ array nuevo con los elementos modificados.
 
 
 --> Reducir un array a un valor
 
+El método reduce() nos permite reducir, mediante una función que se aplica a cada uno de los elemento del array,
+ todos los elementos de dicho array, a un valor único.
 
+La** Función Reduce**, reduce un array a un valor único.
 
+  Para reducir ** un array se necesitan 2 cosas: Una función y el valor original / valor inicial del acumulador**.
+
+  La función va pasando el valor acumulado por cada elemento del array.
+
+  .reduce(FUNCTION_NAME, VALOR_INICIAL_DEL_ACUMULADOR)
+
+Muy interesante todas las funciones que hay en JavaScript para manejo de Array
+
+  Filtrar valores : .filter(función)
+  Transformar, generando un nuevo vector: .map(función)
+  Recorrer y devolver un único valor: .reduce(función, valor inicial)

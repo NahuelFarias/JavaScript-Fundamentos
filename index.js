@@ -52,7 +52,7 @@ class Juego {
     }
   }
 
-  transformarColoANumero(color) {
+  transformarColorANumero(color) {
     switch (color) {
       case "celeste":
         return 0;
@@ -103,7 +103,7 @@ class Juego {
 
   elegirColor(ev) {
     const nombreColor = ev.target.dataset.color;
-    const numeroColor = this.transformarColoANumero(nombreColor);
+    const numeroColor = this.transformarColorANumero(nombreColor);
     this.iluminarColor(nombreColor);
     if (numeroColor === this.secuencia[this.subnivel]) {
       this.subnivel++;

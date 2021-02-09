@@ -5,6 +5,7 @@
 body {
   margin: 0;
   background-image: url(../images/carl-raw-m3hn2Kn5Bns-unsplash.jpg);
+  background-size: cover;
   background-position: center;
   display: flex;
   align-items: center;
@@ -66,17 +67,6 @@ body {
 
 .verde.light {
   background: #badc58;
-}
-
-.btn-start {
-  width: 400px;
-  height: 100px;
-  background: #ecf0f1;
-  color: #2c3e50;
-  font-size: 2.5rem;
-  position: absolute;
-  top: calc(50% - 50px);
-  left: calc(50% - 200px);
 }
 
 .btn-start {
